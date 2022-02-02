@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DSO - Interfaz de Usuario</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<meta charset="ISO-8859-1">
+</head>
+<body>
+	<div id="bloque-devices">
+		<h1>Lista de dispositivos</h1>
+		<table class="tabla">
+			<thead>
+				<tr class="cabecera-tabla">
+					<th>Id</th>
+					<th>Status</th>
+					<th>Location</th>
+					<th>Register time</th>
+					<th>Medidas</th>
+				</tr>
+			</thead>
+			<tbody id="content-devices">
+
+			</tbody>
+		</table>
+	</div>
+	<div id="bloque-medidas" style="display: none;">
+		<h1>Mediciones de los sensores</h1>
+		<p style="display: inline-block">Resultados de las mediciones obtenidas por los sensores.</p>
+		<button id="atras" type="button" onclick="atras();" style="display: inline-block">Volver atrás</button>
+		<table>
+			<thead>
+				<tr class="cabecera-tabla">
+					<th>Fecha</th>
+					<th>Temperatura</th>
+					<th>Humedad</th>
+				</tr>
+			</thead>
+			<tbody id="content-measurements">
+
+			</tbody>
+		</table>
+	</div>
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js_lib.js"></script>
+</body>
+</html>
